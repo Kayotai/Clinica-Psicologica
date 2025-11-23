@@ -7,7 +7,6 @@ export default function Hero() {
         visible: {
             opacity: 1,
             transition: {
-                // Intervalo de 0.2s entre cada elemento
                 staggerChildren: 0.6, 
             },
         },
@@ -35,8 +34,14 @@ export default function Hero() {
                     <strong>Terapia Cognitivo-Comportamental</strong> online e presencial para crianças e adultos.
                 </motion.h2>
 
-                <motion.a href="#" variants={itemVariants} className="buttonZap">
-                    Agende sua primeira sessão
+               <motion.a 
+                    href="#" 
+                    variants={itemVariants} 
+                    className="buttonZap"
+                    whileHover={{ scale: 1.1 }} 
+                    transition={{ type: "tween", duration: 0.2 }}
+                >
+                   Agende sua primeira sessão
                 </motion.a>
             </motion.div>
         </div>

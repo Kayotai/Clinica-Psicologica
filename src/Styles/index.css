@@ -29,14 +29,10 @@ section { height: 100vh; }
    background-color: var(--color-text-corpo);
    padding: 1em;
    border-radius: 10px;
-   color: var(--colot-text-suave);
+   color: var(--color-text-suave);
    font-family: var(--font-family-title);
    font-weight: 400;
    transition: all .4s ease;
-}
-
-.buttonZap:hover {
-   transform: scale(1.1);
 }
 
 @media screen and (max-width: 211px) {

@@ -22,12 +22,13 @@
 
 .title {
     font-family: var(--font-family-title);
-    color: var(--colot-text-suave);
+    color: var(--color-text-suave);
     font-size: 3em;
 }
 
 .titleCTA > h2 {
     font-family: var(--font-family-title);
+    color: var(--color-text-suave);
     font-weight: 300;
     font-style: italic;
     font-size: 1em;
