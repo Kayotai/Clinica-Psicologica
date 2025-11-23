@@ -48,6 +48,7 @@
     cursor: pointer;
     align-items: center;
     display: none;
+    color: var(--color-text-suave);
 }
 
 .navDesktop {
@@ -61,7 +62,7 @@
     width: 80%;
     max-width: 360px;
     height: 100vh;
-    background-color: var(--color-bg-dark);
+    background-color: var(--color-text-corpo);
     box-shadow: -5px 0 15px rgba(0,0,0,0.12);
     display: flex;
     justify-content: center;

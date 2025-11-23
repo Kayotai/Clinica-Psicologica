@@ -7,13 +7,13 @@ export default function Hero() {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.6, 
+                staggerChildren: 1, 
             },
         },
     };
 
     const itemVariants = {
-        hidden: { opacity: 0, y: 20 },
+        hidden: { opacity: 0, y: 40 },
         visible: { opacity: 1, y: 0 },
     };
 
@@ -39,7 +39,7 @@ export default function Hero() {
                     variants={itemVariants} 
                     className="buttonZap"
                     whileHover={{ scale: 1.1 }} 
-                    transition={{ type: "tween", duration: 0.2 }}
+                    transition={{ type: "tween", duration: 0.6 }}
                 >
                    Agende sua primeira sessão
                 </motion.a>

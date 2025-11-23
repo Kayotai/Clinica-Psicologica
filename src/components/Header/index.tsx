@@ -66,7 +66,7 @@ export default function HeaderComum(): JSX.Element {
   return (
     <header className="header">
       <a href="/" className="containerLogo">
-        <strong>Clínica Odontológica</strong>
+        <strong>Clínica Psicológica</strong>
       </a>
 
 
