@@ -1,0 +1,35 @@
+
+.containerHero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    height: 90vh;
+}
+
+.titleCTA {
+    width: 640px;
+    height: 66vh;
+    /* background-color: aquamarine; */
+    margin-left: 2.5em;
+    margin-bottom: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    text-align: left;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.title {
+    font-family: var(--font-family-title);
+    color: var(--colot-text-suave);
+    font-size: clamp(2rem, 5vw + 1rem, 3rem);
+}
+
+.titleCTA > h2 {
+    font-family: var(--font-family-title);
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1em;
+}
