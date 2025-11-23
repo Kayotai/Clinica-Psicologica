@@ -38,3 +38,11 @@ section { height: 100vh; }
 .buttonZap:hover {
    transform: scale(1.1);
 }
+
+@media screen and (max-width: 211px) {
+    .buttonZap {
+        text-align: center;
+        padding: .5em;
+        font-size: .8em;
+    }
+}

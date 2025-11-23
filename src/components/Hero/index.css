@@ -10,7 +10,6 @@
 .titleCTA {
     width: 640px;
     height: 66vh;
-    /* background-color: aquamarine; */
     margin-left: 2.5em;
     margin-bottom: 4em;
     display: flex;
@@ -24,7 +23,7 @@
 .title {
     font-family: var(--font-family-title);
     color: var(--colot-text-suave);
-    font-size: clamp(2rem, 5vw + 1rem, 3rem);
+    font-size: 3em;
 }
 
 .titleCTA > h2 {
@@ -32,4 +31,95 @@
     font-weight: 300;
     font-style: italic;
     font-size: 1em;
+}
+
+@media screen and (max-width: 785px) {
+    .titleCTA {
+        width: 560px;
+    }
+
+    .title {
+        font-size: clamp(2.2rem, 1.5vw + .7rem, 1.5rem);
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .titleCTA {
+        width: 400px;
+    }
+
+    .title {
+        font-size: 2.4em;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .titleCTA {
+        width: 360px;
+    }
+    .title {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 442px) {
+    .titleCTA {
+        width: 320px;
+        height: 40vh;
+    }
+
+    .titleCTA > h2 {
+        display: none;
+    }
+
+    .title {
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    .containerHero {
+        align-items: center;
+    }
+
+    .titleCTA {
+        align-items: center;
+        margin: 0;
+    }
+    .title {
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 324px) {
+    .titleCTA {
+        width: 260px;
+    }
+    .title {
+        font-size: 1.3em;
+    }
+
+    .buttonZap {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 263px) {
+    .titleCTA {
+        width: 210px;
+    }
+    .title {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 211px) {
+    .titleCTA {
+        width: 190px;
+    }
+    .title {
+        font-size: .9em;
+    }
 }

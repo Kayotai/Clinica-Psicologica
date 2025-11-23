@@ -80,12 +80,27 @@
     color: var(--color-hover-link);
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 840px) {
     .navDesktop {
         display: none;
     }
 
     .toggleMenu {
         display: flex;
+    }
+}
+
+@media screen and (max-width: 253px) {
+    .containerLogo {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        font-size: .1em;
+    }
+}
+
+@media screen and (max-width: 218px) {
+    .containerLogo {
+        display: none;
     }
 }
