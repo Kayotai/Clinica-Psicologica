@@ -8,7 +8,7 @@ export default function Hero() {
             opacity: 1,
             transition: {
                 // Intervalo de 0.2s entre cada elemento
-                staggerChildren: 0.2, 
+                staggerChildren: 0.4, 
             },
         },
     };
