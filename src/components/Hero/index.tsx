@@ -1,22 +1,30 @@
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import './index.css'
 
 export default function Hero() {
-    const containerVariants = {
+    const containerVariants: Variants = {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 1, 
+                staggerChildren: 0.3,
+                delayChildren: 0.2, 
             },
         },
     };
 
-    const itemVariants = {
-        hidden: { opacity: 0, y: 40 },
-        visible: { opacity: 1, y: 0 },
+    const itemVariants: Variants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { 
+            opacity: 1, 
+            y: 0,
+            transition: {
+                type: "tween", // Agora o TS sabe que isso é válido
+                ease: "easeOut",
+                duration: 0.8
+            }
+        },
     };
-
 
     return (
         <div className="containerHero">
@@ -34,14 +42,16 @@ export default function Hero() {
                     <strong>Terapia Cognitivo-Comportamental</strong> online e presencial para crianças e adultos.
                 </motion.h2>
 
-               <motion.a 
+                <motion.a 
                     href="#" 
                     variants={itemVariants} 
                     className="buttonZap"
-                    whileHover={{ scale: 1.1 }} 
-                    transition={{ type: "tween", duration: 0.6 }}
+                    whileHover={{ 
+                        scale: 1.1, 
+                        transition: { duration: 0.2, ease: "linear" } 
+                    }} 
                 >
-                   Agende sua primeira sessão
+                    Agende sua primeira sessão
                 </motion.a>
             </motion.div>
         </div>
