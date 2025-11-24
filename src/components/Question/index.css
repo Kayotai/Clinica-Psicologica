@@ -1,0 +1,143 @@
+.containerQuestion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-image: url("../../assets/arvoreDeBaixo.webp");
+    background-position: center center;
+    background-size: cover;
+}
+
+.containerEffectBlack {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    min-height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.containerEffectBlack > h2 {
+    font-family: var(--font-family-title);
+    font-weight: 700;
+    font-size: 2em;
+    color: var(--color-text-suave);
+    text-shadow: 1px 1px 1px black;
+}
+
+.cardsQuestion > ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 5em;
+}
+
+.cardsQuestion > ul > li {
+    background-color: rgba(255, 255, 255, 0.096);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.5), 
+        0 1px 3px rgba(0, 0, 0, 0.5);
+    max-width: 300px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 2em;
+    border-radius: 20px;
+}
+
+.bgIcon {
+    background-color: var(--color-text-subtitulo);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.cards > h3, .cards > p {
+    font-family: var(--font-family-title);
+    color: var(--color-text-suave);
+    text-shadow: 1px 1px 1px black;
+}
+
+.cards > h3 {
+    border-bottom: 2px solid var(--color-text-subtitulo);
+    padding: 2px;
+}
+
+.cards > p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.7em;
+}
+
+@media screen and (max-width: 1024px) {
+    .containerQuestion, .containerEffectBlack {
+        min-height: 170vh;
+    }
+
+    .cardsQuestion > ul {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .cardsQuestion > ul {
+        gap: 3em;
+    }
+
+    .cardsQuestion > ul > li {
+        max-width: 270px;
+    }
+
+    .cards > p {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 608px) {
+    .containerEffectBlack, .containerQuestion {
+        min-height: 175vh;
+    }
+
+    .containerEffectBlack > h2 {
+        font-size: 1.8em;
+    }
+
+    .cardsQuestion > ul > li {
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .containerEffectBlack, .containerQuestion {
+        min-height: 220vh;
+    }
+
+    .cardsQuestion > ul {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .containerEffectBlack, .containerQuestion {
+        min-height: 240vh;
+    }
+
+    .containerEffectBlack > h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .containerEffectBlack > h2 {
+        text-align: center;
+        font-size: 1.2em;
+    }
+}

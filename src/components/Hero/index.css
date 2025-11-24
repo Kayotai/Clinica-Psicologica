@@ -99,7 +99,7 @@
     }
 }
 
-@media screen and (max-width: 324px) {
+@media screen and (max-width: 336px) {
     .titleCTA {
         width: 260px;
     }
@@ -111,8 +111,7 @@
         font-size: .8em;
     }
 }
-
-@media screen and (max-width: 263px) {
+@media screen and (max-width: 275px) {
     .titleCTA {
         width: 210px;
     }

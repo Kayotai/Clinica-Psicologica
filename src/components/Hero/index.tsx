@@ -7,8 +7,8 @@ export default function Hero() {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.3,
-                delayChildren: 0.2, 
+                staggerChildren: 0.8,
+                delayChildren: 0.5, 
             },
         },
     };
@@ -18,10 +18,9 @@ export default function Hero() {
         visible: { 
             opacity: 1, 
             y: 0,
-            transition: {
-                type: "tween", // Agora o TS sabe que isso é válido
-                ease: "easeOut",
-                duration: 0.8
+            transition: { 
+                ease: "linear",
+                duration: 1
             }
         },
     };
