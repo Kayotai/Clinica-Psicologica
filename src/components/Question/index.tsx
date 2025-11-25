@@ -1,11 +1,14 @@
 import './index.css'
+import  bg  from '../../assets/duasArvoresMarrons.webp'
 import { cards } from '../List'
 import { motion } from 'framer-motion'
+
 
 export default function Question()
 {
     return(
         <section className="containerQuestion">
+            <img src={bg} alt="Uma imagem de fundo, duas árvores com uma fresta de sol no meio" />
             <div className="containerEffectBlack">
                 <h2 className="subtitleQuestion">
                     Como posso te ajudar:
