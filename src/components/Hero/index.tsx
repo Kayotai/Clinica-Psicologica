@@ -1,5 +1,6 @@
 import { motion, type Variants } from 'framer-motion';
 import './index.css'
+import ButtonZap from '../buttonCTA';
 
 export default function Hero() {
     const containerVariants: Variants = {
@@ -26,7 +27,7 @@ export default function Hero() {
     };
 
     return (
-        <div className="containerHero">
+        <div className="containerHero" id="hero">
             <motion.div 
                 className="titleCTA"
                 variants={containerVariants}
@@ -40,18 +41,7 @@ export default function Hero() {
                 <motion.h2 variants={itemVariants}>
                     <strong>Terapia Cognitivo-Comportamental</strong> online e presencial para crianças e adultos.
                 </motion.h2>
-
-                <motion.a 
-                    href="#" 
-                    variants={itemVariants} 
-                    className="buttonZap"
-                    whileHover={{ 
-                        scale: 1.1, 
-                        transition: { duration: 0.2, ease: "linear" } 
-                    }} 
-                >
-                    Agende sua primeira sessão
-                </motion.a>
+                <ButtonZap />
             </motion.div>
         </div>
     );

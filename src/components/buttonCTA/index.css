@@ -1,0 +1,26 @@
+.buttonZap {
+   background-color: var(--color-text-corpo);
+   padding: 1em;
+   border-radius: 10px;
+   color: var(--color-text-suave);
+   font-family: var(--font-family-title);
+   font-weight: 500;
+   will-change: transform;
+   text-align: center;
+}
+
+@media screen and (max-width: 336px) {
+    .buttonZap {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 211px) {
+    .buttonZap {
+        text-align: center;
+        padding: .5em;
+        font-size: .8em;
+    }
+}
+
+

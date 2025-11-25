@@ -4,6 +4,9 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Question from "./components/Question";
 import Help from "./components/Help";
+import CTA from "./components/CTA";
+import { AnimatePresence } from "framer-motion";
+
 
 import arvores from "./assets/duasArvoresMarrons.webp";
 import arvore from "./assets/arvoreDeBaixo.webp";
@@ -11,7 +14,7 @@ import psicologa from "./assets/psicologa.webp";
 const BACKGROUND_IMAGE_URL = arvores && arvore && psicologa;
 
 import { useState, useEffect } from 'react';
-import { AnimatePresence } from "framer-motion";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -42,10 +45,12 @@ function App() {
             <About />
             <Question />
             <Help />
+            <CTA />
           </main>
+          <Footer />
         </>
       )}
-      </AnimatePresence>
+    </AnimatePresence>
   )
 }
 

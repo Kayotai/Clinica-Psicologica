@@ -1,0 +1,47 @@
+.sectionCTA {
+    background-color: var(--color-text-subtitulo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7em;
+    min-height: 100vh;
+}
+
+.sectionCTA > h2 {
+    font-family: var(  --font-family-title);
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--color-text-suave);
+}
+
+.sectionCTA > .buttonZap {
+    padding: 1.3em;
+    font-size: 1.4em;
+
+}
+
+@media screen and (max-width: 346px) {
+    .sectionCTA > h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .sectionCTA > h2 {
+        font-size: 1.2em;
+    }
+
+    .sectionCTA > .buttonZap {
+        padding: .9em;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 289px) {
+    .sectionCTA > .buttonZap {
+        padding: .8em;
+        font-size: .8em;
+    }
+}

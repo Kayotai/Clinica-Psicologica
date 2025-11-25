@@ -1,13 +1,13 @@
 import './index.css';
 import psicologa from '../../assets/psicologa.webp';
-
+import ButtonZap from '../buttonCTA';
 import { motion } from 'framer-motion';
 
 
 export default function About()
 {
     return(
-        <section className="aboutSection">
+        <section className="aboutSection" id='about'>
             <motion.figure
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -28,7 +28,7 @@ export default function About()
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, numquam!
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, magni?
                 </p>
-                <a href="#" className="buttonZap">Agende sua primeira sessão</a>
+                <ButtonZap />
             </div>
         </section>
     )

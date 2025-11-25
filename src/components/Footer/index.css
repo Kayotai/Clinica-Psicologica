@@ -1,0 +1,70 @@
+footer {
+    min-height: 120vh;
+    background-color: var(--color-text-titulo);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.containerName {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0 1em;
+}
+
+h4 {
+    font-family: var(--font-family-title);
+    color: var(--color-text-suave);
+    margin-bottom: 1.2em;
+    border-bottom: 2px solid var(--color-text-subtitulo);
+    padding: 10px 0;
+    font-size: 1.3em;
+}
+
+.containerSocial > li {
+    display: flex;
+    gap: 1em;
+    line-height: 2em;
+    align-items: center;
+}
+
+.containerSocial > li > a {
+    font-family: var(--font-family-title);
+    color: var(--color-text-suave);
+    text-align: center;
+}
+
+.containerLinksImportant > li > a {
+    color: var(--color-text-suave);
+    font-family: var(--font-family-title);
+}
+
+.containerCRP > p {
+    font-family: var(--font-family-title);
+    color: var(--color-text-suave);
+}
+
+.locate > p {
+    color: var(--color-text-suave);
+    font-family: var(--font-family-title);
+}
+
+footer > ul > li {
+    margin-top: 10px;
+}
+
+footer > p {
+    color: var(--color-text-suave);
+    font-family: var(--font-family-title);
+    width: 80vw;
+    margin: 2em 1em;
+}
+
+@media screen and (max-width: 298px) {
+    footer {
+        min-height: 140vh;
+    }
+}
