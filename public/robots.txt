@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://clinica-odontologica-alpha.vercel.app/sitemap.xml
