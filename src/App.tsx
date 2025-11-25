@@ -5,6 +5,7 @@ import About from "./components/About";
 import Question from "./components/Question";
 import Help from "./components/Help";
 import CTA from "./components/CTA";
+import Footer from "./components/Footer";
 import { AnimatePresence } from "framer-motion";
 
 
@@ -14,7 +15,6 @@ import psicologa from "./assets/psicologa.webp";
 const BACKGROUND_IMAGE_URL = arvores && arvore && psicologa;
 
 import { useState, useEffect } from 'react';
-import Footer from "./components/Footer";
 
 
 function App() {

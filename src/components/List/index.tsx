@@ -1,5 +1,5 @@
 import type React from "react";
-import { FaCompass, FaInstagram, FaLaptop, FaMailBulk, FaPhone, FaUser, FaVoicemail, FaWhatsapp } from 'react-icons/fa'
+import { FaCompass, FaInstagram, FaLaptop, FaMailBulk, FaPhone, FaUser, FaWhatsapp } from 'react-icons/fa'
 
 export interface comumHeaderLinkProps {
     href: string;
